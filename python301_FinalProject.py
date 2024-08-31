@@ -80,24 +80,6 @@ if accountVerification in ('Yes', 'yes', 'YES', 'ye', 'YE', 'Y', 'y'):
                 else:
                     userAccountBalance.modify(f'{Path.home()}/Downloads/{accountName}.txt', f'Balance: {float(userAccountBalance.balance)}', f'Balance: {userAccountBalance.withdraw(withdrawAmount)}')
                     print(f'\n Thank you for your transaction your new balance is {userAccountBalance.balance}, now leaving the ATM\n')
-                    # userAccountWrite = open(f'{Path.home()}/Downloads/{accountName}.txt', 'w')
-                    # for i in userAccountRead:
-                    #     userAccountWrite.writelines(f'Balance: {userAccountBalance.withdraw(withdrawAmount)}')  
-                    #     break
-                    # userAccountBalance.log_transactions(f"Withdraw an amount of: {withdrawAmount} {dateTime}")
-                # for line in userAccountRead:
-                #     if(float(userAccountBalance.balance) < float(withdrawAmount)):
-                #         print('\nError you cannot withdraw an amount that is greater than your balance')
-                #     else:
-                #         userAccountBalance.modify(f'{Path.home()}/Downloads/{accountName}.txt', f'Balance: {int(userAccountBalance.balance)}', f'Balance: {userAccountBalance.withdraw(withdrawAmount)}')
-                #         # userAccountWrite = open(f'{Path.home()}/Downloads/{accountName}.txt', 'w')
-                #         # for i in userAccountRead:
-                #         #     userAccountWrite.writelines(f'Balance: {userAccountBalance.withdraw(withdrawAmount)}')  
-                #         #     break
-                #         # userAccountBalance.log_transactions(f"Withdraw an amount of: {withdrawAmount} {dateTime}")
-                #         break
-                #         # # userAccountWrite.writelines(f'Balance: {currentBalance}') 
-                #     break
             else:
                 print('\n Error entered amount')
         elif transaction in ('deposit', 'D', 'd'):
